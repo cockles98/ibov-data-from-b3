@@ -28,6 +28,7 @@ def test_list_cotahist_files_filters_and_sorts(tmp_path: Path) -> None:
     expected_files = [
         cotahist_dir / "COTAHIST.A2023.TXT",
         cotahist_dir / "COTAHIST.B2022.TXT",
+        cotahist_dir / "COTAHIST_A2024.TXT",
     ]
     for file_path in expected_files:
         file_path.write_text("dummy")

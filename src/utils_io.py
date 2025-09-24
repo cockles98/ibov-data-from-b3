@@ -41,7 +41,7 @@ def _list_files(directory: Path, pattern: str | None = None) -> List[Path]:
 def list_cotahist_files(path: PathLike = Path("data") / "cotahist") -> List[Path]:
     """List available COTAHIST text files sorted by name."""
     directory = Path(path)
-    return _list_files(directory, pattern="COTAHIST.*.TXT")
+    return _list_files(directory, pattern="COTAHIST*.TXT")
 
 
 def list_carteiras_files(path: PathLike = Path("data") / "ibov_carteiras") -> List[Path]:

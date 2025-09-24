@@ -31,6 +31,10 @@ ibovespa_data/
 2. Escolha a opcao Ibovespa e selecione a carteira (vigente ou historica) que deseja baixar.
 3. Baixe o arquivo `.xlsx` ou `.csv` disponibilizado e salve em `data/ibov_carteiras/`, organizando por data de validade quando desejar.
 
+## Observacoes sobre carteiras
+- Os arquivos em `data/ibov_carteiras` estao padronizados com o cabecalho `Codigo,Acao,Tipo,Qtde Teorica,Part %`.
+- A carteira `IBOV_2022-09-02_2022-12-02.csv` replica os valores de `IBOV_2022-05-02_2022-08-02.csv` ate que seja encontrada uma fonte oficial para o periodo.
+
 ## Roteiro de Uso (5 passos)
 1. Baixar: obtenha os arquivos brutos da B3 e armazene em `data/`.
 2. Parsear: desenvolva scripts em `src/` para ler e transformar os arquivos em estruturas tabulares padronizadas.

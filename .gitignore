@@ -30,5 +30,12 @@ desktop.ini
 # Logs
 *.log
 # Project specific
-out/
-data/
+out/*
+!out/ibov_b3.csv
+!out/ibov_b3_2019_2020.csv
+!out/ibov_b3_2019_2021.csv
+data/*
+!data/cotahist_2019_2020/
+!data/cotahist_2019_2021/
+!data/cotahist_2019_2020/**
+!data/cotahist_2019_2021/**
